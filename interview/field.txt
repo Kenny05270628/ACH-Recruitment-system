@@ -1,0 +1,13 @@
+# 基础信息，学校与学历信息，综合能力测评成绩，笔试成绩
+"user_id", "full_name", "city", "phone", "email", "apply_position", "born_address", "gender", "candidate_remark", "bachelor_college", "master_college", "doctor_college", "major", "degree", "creator", "created_date", "modified_date", "last_editor"
+
+# 一面
+"first_score", "first_learning_ability", "first_professional_competency", "first_advantage", "first_disadvantage", "first_result", "first_recommend_department", "first_interviewer", "first_remark"
+
+# 二面
+"second_score", "second_learning_ability", "second_professional_ability", "second_pursuit_of_excellence_ability", "second_communication_ability", "second_anti_pressure_ability", "second_advantage", "second_disadvantage", "second_result", "second_recommend_department", "second_interviewer", "second_remark"
+
+# HR终面
+"hr_score", "hr_responsibility", "hr_communication_ability", "hr_logic_ability", "hr_potential", "hr_stability", "hr_advantage", "hr_disadvantage", "hr_result", "hr_interviewer", "hr_remark"
+
+

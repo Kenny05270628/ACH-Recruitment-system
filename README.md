@@ -1,4 +1,5 @@
 ### Recruitment System
+
 It is a recruitment system developed by Django.
 
 + 最外层的 mysite/ 根目录只是你项目的容器， Django 不关心它的名字，你可以将它重命名为任何你喜欢的名字。
@@ -11,3 +12,15 @@ It is a recruitment system developed by Django.
 
 ```python
 python manage.py runserver
+```
+
+
+
+Django中核心的数据库迁移命令
+
+```python
+# 生成生成迁移脚本文件
+python manage.py makemigrations
+# 应用迁移到数据库
+python manage.py migrate
+```
