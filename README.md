@@ -14,8 +14,6 @@ It is a recruitment system developed by Django.
 python manage.py runserver
 ```
 
-
-
 Django中核心的数据库迁移命令
 
 ```python
