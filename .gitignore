@@ -4,6 +4,7 @@ db.sqlite3
 # Python缓存
 __pycache__/
 *.py[cod]
+*.pyc
 
 # 环境相关
 .env/

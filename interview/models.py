@@ -1,5 +1,10 @@
 from django.db import models
 
+'''
+简单来说，models.py 是Django应用的数据核心，负责处理所有与数据库相关的逻辑，
+让开发者可以用面向对象的方式操作数据库，而不需要直接编写复杂的SQL语句。
+'''
+
 # Create your models here.
 # 第一轮面试结果
 FIRST_INTERVIEW_RESULT_TYPE = ((u'建议复试', u'建议复试'), (u'待定', u'待定'), (u'放弃', u'放弃'))
@@ -95,11 +100,12 @@ class Candidate(models.Model):
     modified_date = models.DateTimeField(auto_now=True, null=True, blank=True, verbose_name='更新时间')
     last_editor = models.CharField(max_length=256, blank=True, verbose_name='最后编辑者')
 
+    ''' 元数据配置，如设置表名为 candidate，可读名称为"应聘者" '''
     class Meta:
         db_table = 'candidate'
         verbose_name = '应聘者'
         verbose_name_plural = verbose_name
 
-    # 将对象转换为字符串
+    ''' 自定义行为，将对象转换为字符串 '''
     def __str__(self):
         return self.full_name
